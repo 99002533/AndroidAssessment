@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         DB = new DBHelper(this);
 
         signup.setOnClickListener(new View.OnClickListener() {
+             Log.i("On Click","register");
             @Override
             public void onClick(View view) {
                 String user = username.getText().toString();
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
+                 Log.i("On Click","login");
 
             }
         });
