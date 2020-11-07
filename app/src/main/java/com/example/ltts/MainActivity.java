@@ -10,12 +10,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public static String TAG = MainActivity.class.getSimpleName();
     EditText username, password, cfpassword;
     Button signup, signin;
     DBHelper  DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(TAG,"Activity Started");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
